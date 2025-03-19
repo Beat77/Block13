@@ -6,8 +6,14 @@
  * @returns {number} temperature in °C
  */
 function convertToCelsius(f) {
-  // TODO
-}
+    return (f - 32) * 5 / 9;
+  }
+
+
+  const f = 100;
+  const Celsius = convertToCelsius(f)
+  console.log ('')
+
 
 /**
  * | Temperature | Description |
@@ -24,7 +30,15 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   // TODO
-}
+  if (convertToCelsius(f) <32 )"it is very cold" 
+    if (convertToCelsius(f) <64 )"it is cold"
+  } {
+     if (convertToCelsius(f) <86) "it is warm"
+  }
+  {
+    else ("it is hot")
+  }
+
 
 /**
  * @param {number} limit
